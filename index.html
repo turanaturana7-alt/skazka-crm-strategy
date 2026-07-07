@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>CRM-стратегия парка «Сказка» — сезон июль–сентябрь</title>
+<meta name="description" content="Пересчитанная CRM-стратегия парка «Сказка»: декомпозиция выручки, каналы, контент-план, roadmap июль–сентябрь." />
+<link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+<div class="shell">
+
+  <aside class="sidebar">
+    <div class="brand">
+      <div class="label">CRM · Сезон 2</div>
+      <h1>Парк «Сказка»</h1>
+      <p>Ребейзлайн стратегии после факта июня. Защищаемая модель вместо оптимистичных допущений.</p>
+      <div class="theme-switch">
+        <button data-mode="light" title="Светлая">☀️</button>
+        <button data-mode="dark" title="Тёмная">🌙</button>
+        <button data-mode="system" title="Системная">🖥️</button>
+      </div>
+    </div>
+
+    <nav class="nav" id="nav">
+      <div class="nav-section">Обзор</div>
+      <a href="#exec-summary">Executive Summary</a>
+      <a href="#why-not-defensible">Почему старые цифры не работают</a>
+
+      <div class="nav-section">Модель</div>
+      <a href="#revenue-model">Декомпозиция выручки</a>
+      <a href="#segments-base">Сегменты и база</a>
+
+      <div class="nav-section">Каналы и контент</div>
+      <a href="#channel-mix">Канальный микс</a>
+      <a href="#crm-flows">CRM-цепочки</a>
+      <a href="#content-plan">Контент-план</a>
+
+      <div class="nav-section">Продукты</div>
+      <a href="#events-wow">Events / WOW-поводы</a>
+      <a href="#night-riders">Night Riders</a>
+      <a href="#b2b">B2B и корпоративы</a>
+
+      <div class="nav-section">Данные и контроль</div>
+      <a href="#attribution">Атрибуция и промокоды</a>
+      <a href="#budget">Бюджет каналов</a>
+      <a href="#legal">Юрблок 152-ФЗ / ФЗ-38</a>
+      <a href="#dashboard">Дашборд метрик</a>
+      <a href="#hypothesis-log">Журнал гипотез</a>
+
+      <div class="nav-section">План</div>
+      <a href="#roadmap">Roadmap июль–сентябрь</a>
+    </nav>
+  </aside>
+
+  <main class="content">
+    <div class="container">
+
+      <!-- 1. EXECUTIVE SUMMARY -->
+      <section class="slide" id="exec-summary">
+        <div class="eyebrow">01 · Executive Summary</div>
+        <div class="hero">
+          <div>
+            <h2>Меняем модель на защищаемую — до того, как её защищать перед руководством</h2>
+            <p class="lead">Факт июня показал: старые цифры (50 000 билетов, оптимистичная база и CR) не подтвердились. Вместо повторной ставки на недостижимые KPI — пересобираем стратегию снизу вверх: от реальной валидной базы и консервативных CR к защищаемой выручке 20–35 млн ₽ за первый сезон.</p>
+          </div>
+          <div class="card info">
+            <div class="metric-label">Статус</div>
+            <div class="metric grad">Ребейзлайн</div>
+            <p class="metric-sub">Июнь зафиксирован как факт / missed baseline. Июль — новая точка отсчёта.</p>
+          </div>
+        </div>
+        <div class="cards-4" style="margin-top:16px">
+          <div class="card">
+            <div class="metric-label">Валидная база</div>
+            <div class="metric">20–25 тыс.</div>
+            <p class="metric-sub">Доставляемые контакты с согласием</p>
+          </div>
+          <div class="card">
+            <div class="metric-label">Билеты</div>
+            <div class="metric">5–10 тыс.</div>
+            <p class="metric-sub">Реалистичный коридор через CRM</p>
+          </div>
+          <div class="card">
+            <div class="metric-label">Выручка</div>
+            <div class="metric">20–35 млн ₽</div>
+            <p class="metric-sub">Защищаемая цель первого сезона</p>
+          </div>
+          <div class="card">
+            <div class="metric-label">Upside</div>
+            <div class="metric">Events / B2B</div>
+            <p class="metric-sub">Отдельно, не смешивается с билетной моделью</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 2. WHY OLD NUMBERS DON'T HOLD -->
+      <section class="slide" id="why-not-defensible">
+        <div class="eyebrow">02 · Диагностика</div>
+        <h2>Почему старые цифры не защищаются</h2>
+        <p class="lead">Старая модель строилась «сверху вниз» — от желаемой выручки к базе и CR, а не наоборот. Это создало разрыв между планом и фактом июня.</p>
+        <div class="cards-3" style="margin-top:14px">
+          <div class="card warn">
+            <span class="tag orange">База</span>
+            <h3>Размер базы завышен</h3>
+            <p>В расчёт попадали недоставляемые и неактивные контакты без учёта consent и deliverability.</p>
+          </div>
+          <div class="card warn">
+            <span class="tag orange">CR</span>
+            <h3>CR взят «с рынка», не из факта</h3>
+            <p>Ожидания 3–5% не подтвердились фактическими открытиями/кликами/покупками июня.</p>
+          </div>
+          <div class="card warn">
+            <span class="tag orange">Каналы</span>
+            <h3>Омниканальность заявлена, не построена</h3>
+            <p>Telegram/MAX/SMS фигурировали в плане, но не были включены как рабочие цепочки к пику сезона.</p>
+          </div>
+        </div>
+        <div class="card good" style="margin-top:14px">
+          <h3>Что фиксируем как единый источник правды</h3>
+          <ul style="margin:8px 0 0; padding-left:18px">
+            <li>Выгрузка валидной базы: доставляемость, email/TG/MAX/SMS consent, заполненность профиля</li>
+            <li>Факт июня: отправки, открытия, клики, покупки, выручка, заявки events/B2B</li>
+            <li>Действующая стратегия и контент-план (Google Sheets, июль–сентябрь)</li>
+            <li>Продукты: билеты, Night Riders, дни рождения, выпускные, корпоративы, тимбилдинги, Эколофт</li>
+            <li>Юрблок: согласия 152-ФЗ, рекламные согласия ФЗ-38, канал/цель/дата согласия</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- 3. REVENUE MODEL (interactive) -->
+      <section class="slide" id="revenue-model">
+        <div class="eyebrow">03 · Интерактивная модель</div>
+        <h2>Новая декомпозиция выручки</h2>
+        <p class="lead">Модель снизу вверх: валидная база × кумулятивная конверсия за N касаний × билетов на покупку × средний чек. Двигайте ползунки — цифры и график пересчитываются.</p>
+
+        <div class="model-grid" style="margin-top:18px">
+          <div>
+            <div class="slider-row">
+              <label>База (доставляемые контакты) <output id="rm-base-out">22 500</output></label>
+              <input type="range" id="rm-base" min="15000" max="30000" step="500" value="22500" />
+            </div>
+            <div class="slider-row">
+              <label>CR за одно касание <output id="rm-cr-out">1.0%</output></label>
+              <input type="range" id="rm-cr" min="0.3" max="2" step="0.1" value="1.0" />
+            </div>
+            <div class="slider-row">
+              <label>Касаний за сезон <output id="rm-touches-out">10</output></label>
+              <input type="range" id="rm-touches" min="6" max="14" step="1" value="10" />
+            </div>
+            <div class="slider-row">
+              <label>Средний чек <output id="rm-check-out">2 900 ₽</output></label>
+              <input type="range" id="rm-check" min="2200" max="4200" step="50" value="2900" />
+            </div>
+            <p class="small">Допущения: в среднем 3 билета на покупку (семейный визит), +15% допродажи (парковка, фото, кафе). Не включает Night Riders и B2B — см. отдельные разделы.</p>
+          </div>
+
+          <div class="card" style="display:flex; flex-direction:column; gap:14px">
+            <div class="cards-2">
+              <div>
+                <div class="metric-label">Покупатели</div>
+                <div class="metric" id="rm-buyers">2 160</div>
+              </div>
+              <div>
+                <div class="metric-label">Билеты</div>
+                <div class="metric" id="rm-tickets">6 480</div>
+              </div>
+            </div>
+            <div>
+              <div class="metric-label">Прогноз выручки за сезон</div>
+              <div class="metric grad" id="rm-revenue" style="font-size:38px">21.6 млн ₽</div>
+            </div>
+            <div class="chart-box">
+              <svg id="rm-chart" viewBox="0 0 220 260" width="220" height="240">
+                <line x1="0" y1="240" x2="220" y2="240" stroke="var(--line)" stroke-width="1.5" />
+                <rect id="bar-tickets" x="45" width="46" y="90" height="150" rx="8" fill="var(--cyan-2)" />
+                <text id="bar-tickets-label" x="68" y="82" font-size="12" text-anchor="middle" font-weight="700">билеты</text>
+                <text x="68" y="255" font-size="11" text-anchor="middle">билеты</text>
+                <rect id="bar-revenue" x="130" width="46" y="20" height="220" rx="8" fill="var(--fuchsia-2)" />
+                <text id="bar-revenue-label" x="153" y="12" font-size="12" text-anchor="middle" font-weight="700">выручка</text>
+                <text x="153" y="255" font-size="11" text-anchor="middle">выручка</text>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 4. SEGMENTS AND BASE -->
+      <section class="slide" id="segments-base">
+        <div class="eyebrow">04 · Аудитория</div>
+        <h2>Сегменты и база</h2>
+        <p class="lead">База сегментируется не по демографии, а по сценарию визита — это определяет оффер и частоту касаний.</p>
+        <div class="table-wrap" style="margin-top:12px">
+          <table>
+            <thead>
+              <tr><th>Сегмент</th><th>Оценка размера</th><th>Триггер оффера</th><th>Приоритет</th></tr>
+            </thead>
+            <tbody>
+              <tr><td><b>Малыш 3–6</b></td><td>~18%</td><td>Утренние сеансы, безопасность аттракционов</td><td><span class="tag green">Высокий</span></td></tr>
+              <tr><td><b>Семья 7–12</b></td><td>~34%</td><td>Комбо-билет, выходные, промо недели</td><td><span class="tag green">Высокий</span></td></tr>
+              <tr><td><b>Подростки</b></td><td>~16%</td><td>Night Riders, компании друзей</td><td><span class="tag yellow">Средний</span></td></tr>
+              <tr><td><b>Пара / свидание</b></td><td>~10%</td><td>Вечерние слоты, атмосфера</td><td><span class="tag yellow">Средний</span></td></tr>
+              <tr><td><b>Первый визит</b></td><td>~14%</td><td>Welcome-цепочка, карта парка</td><td><span class="tag green">Высокий</span></td></tr>
+              <tr><td><b>B2B / Events</b></td><td>~8%</td><td>Корпоративы, дни рождения, выпускные</td><td><span class="tag fuchsia">Отдельная модель</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- 5. CHANNEL MIX -->
+      <section class="slide" id="channel-mix">
+        <div class="eyebrow">05 · Каналы</div>
+        <h2>Канальный микс</h2>
+        <p class="lead">Омниканальность переносим на пик сезона (вторая половина августа), а не на конец сентября — важное отличие от старого плана.</p>
+        <div class="cards-4" style="margin-top:12px">
+          <div class="card">
+            <span class="tag cyan">Email</span>
+            <h3>2–3 касания в неделю</h3>
+            <p>Не всем сразу — по сегментам и стадии воронки.</p>
+          </div>
+          <div class="card">
+            <span class="tag purple">Telegram</span>
+            <h3>3–4 касания в неделю</h3>
+            <p>Основной канал для подростков и Night Riders.</p>
+          </div>
+          <div class="card">
+            <span class="tag fuchsia">MAX</span>
+            <h3>Зеркало Telegram</h3>
+            <p>Адаптация формата, без дублирования 1-в-1.</p>
+          </div>
+          <div class="card">
+            <span class="tag orange">SMS</span>
+            <h3>До 2 раз в месяц</h3>
+            <p>Только дедлайны и напоминания.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 6. CRM FLOWS -->
+      <section class="slide" id="crm-flows">
+        <div class="eyebrow">06 · Единая система</div>
+        <h2>CRM-цепочки вместо двух противоречащих документов</h2>
+        <p class="lead">Стратегия и контент-план сводятся в одну матрицу: сегмент × продукт × канал × рубрика × оффер × гипотеза × дата × KPI × UTM × промокод × статус × владелец.</p>
+        <div class="timeline" style="margin-top:16px">
+          <div class="tl-item"><span class="tl-dot"></span><h3>Welcome-цепочка</h3><p>Первый визит → карта парка, что включено, FAQ, промокод на повторный визит.</p></div>
+          <div class="tl-item"><span class="tl-dot"></span><h3>Pre-visit</h3><p>Напоминание о брони, что взять с собой, погода, парковка.</p></div>
+          <div class="tl-item"><span class="tl-dot"></span><h3>Post-visit</h3><p>Фото/отзыв, промокод на второй визит, приглашение в Telegram.</p></div>
+          <div class="tl-item"><span class="tl-dot"></span><h3>Weekly promo</h3><p>Будни/утро-вечер/студенты — ротация по неделям, не всем сегментам одновременно.</p></div>
+          <div class="tl-item"><span class="tl-dot"></span><h3>Birthday-flow</h3><p>За 14 дней до ДР ребёнка — оффер на праздник в парке.</p></div>
+          <div class="tl-item"><span class="tl-dot"></span><h3>Win-back</h3><p>60+ дней без визита — реактивационная серия с нарастающим промокодом.</p></div>
+        </div>
+      </section>
+
+      <!-- 7. CONTENT PLAN -->
+      <section class="slide" id="content-plan">
+        <div class="eyebrow">07 · Контент-Engine</div>
+        <h2>Контент-план и рубрикатор</h2>
+        <p class="lead">Матрица «сегмент × канал»: что и как часто получает каждый сегмент. Рубрики ниже наполняют эту матрицу конкретным контентом.</p>
+        <div class="matrix-scroll" style="margin-top:14px">
+          <div class="matrix" style="grid-template-columns: 170px repeat(4, 1fr);">
+            <div class="mx-head">Сегмент \ Канал</div>
+            <div class="mx-head">Email</div>
+            <div class="mx-head">Telegram</div>
+            <div class="mx-head">MAX</div>
+            <div class="mx-head">SMS</div>
+
+            <div class="mx-seg">Малыш 3–6</div>
+            <div class="mx-cell"><b>Маршруты дня</b>утро, безопасность</div>
+            <div class="mx-cell"><b>Закулисье</b>животные, команда</div>
+            <div class="mx-cell"><b>Закулисье</b>зеркало TG</div>
+            <div class="mx-cell"><b>Дедлайн</b>только акции выходного дня</div>
+
+            <div class="mx-seg">Семья 7–12</div>
+            <div class="mx-cell"><b>Промо недели</b>2 700 ₽ vs 2 900 ₽</div>
+            <div class="mx-cell"><b>Маршруты дня</b>комбо-программа</div>
+            <div class="mx-cell"><b>Промо недели</b>зеркало TG</div>
+            <div class="mx-cell"><b>Напоминание</b>бронь/дедлайн</div>
+
+            <div class="mx-seg">Подростки</div>
+            <div class="mx-cell"><b>WOW-поводы</b>ДР, компании</div>
+            <div class="mx-cell"><b>Night Riders</b>фотоотчёт, промокод</div>
+            <div class="mx-cell"><b>Night Riders</b>зеркало TG</div>
+            <div class="mx-cell">—</div>
+
+            <div class="mx-seg">Первый визит</div>
+            <div class="mx-cell"><b>Сервис</b>карта, FAQ, браслет</div>
+            <div class="mx-cell"><b>Закулисье</b>атмосфера парка</div>
+            <div class="mx-cell"><b>Сервис</b>зеркало TG</div>
+            <div class="mx-cell">—</div>
+
+            <div class="mx-seg">B2B</div>
+            <div class="mx-cell"><b>B2B-продажи</b>КП, follow-up</div>
+            <div class="mx-cell"><b>B2B-продажи</b>кейсы, отзывы</div>
+            <div class="mx-cell">—</div>
+            <div class="mx-cell"><b>Напоминание</b>дедлайн заявки</div>
+          </div>
+        </div>
+        <div class="cards-4" style="margin-top:16px">
+          <div class="card"><h3>Маршруты дня</h3><p>Малыш 3–6, семья 7–12, подростки, свидание, первый визит</p></div>
+          <div class="card"><h3>Промо недели</h3><p>Онлайн 2 700 ₽ вместо 2 900 ₽, будни, утро/вечер, студенты</p></div>
+          <div class="card"><h3>Night Riders</h3><p>Фотоотчёт, промокод, повторный дневной визит, ДР подростка</p></div>
+          <div class="card"><h3>WOW-поводы</h3><p>ДР, выпускной, корпоратив, тимбилдинг, Эколофт</p></div>
+          <div class="card"><h3>Закулисье</h3><p>Животные, аттракционы, безопасность, команда</p></div>
+          <div class="card"><h3>Сезонные дедлайны</h3><p>Каникулы, выходные, закрытие сезона</p></div>
+          <div class="card"><h3>B2B-продажи</h3><p>Новогодние корпоративы с сентября: заявки, КП, follow-up</p></div>
+          <div class="card"><h3>Сервис</h3><p>Карта, парковка, автобус, режим работы, браслет, FAQ</p></div>
+        </div>
+      </section>
+
+      <!-- 8. EVENTS / WOW -->
+      <section class="slide" id="events-wow">
+        <div class="eyebrow">08 · Продукт</div>
+        <h2>Events / WOW-поводы</h2>
+        <p class="lead">День рождения, выпускной, корпоратив, тимбилдинг, Эколофт — отдельная воронка с более длинным циклом принятия решения.</p>
+        <div class="cards-4" style="margin-top:12px">
+          <div class="card"><h3>Дни рождения</h3><p>Триггер за 14 дней до ДР ребёнка в базе.</p></div>
+          <div class="card"><h3>Выпускные</h3><p>Сезонный всплеск май–июнь, заявки на след. год с сентября.</p></div>
+          <div class="card"><h3>Корпоративы</h3><p>B2B-цепочка: КП → бронь → follow-up → повтор.</p></div>
+          <div class="card"><h3>Эколофт</h3><p>Нишевый продукт для тимбилдингов и офф-сайтов.</p></div>
+        </div>
+      </section>
+
+      <!-- 9. NIGHT RIDERS -->
+      <section class="slide" id="night-riders">
+        <div class="eyebrow">09 · Продукт</div>
+        <h2>Night Riders</h2>
+        <p class="lead">Отдельная модель, не смешивается с основной билетной воронкой: ночные заезды → дневной безлимит → events для подростков.</p>
+        <div class="hero" style="margin-top:12px">
+          <div class="card">
+            <h3>Воронка Night Riders</h3>
+            <ol style="margin:8px 0 0; padding-left:18px; color:var(--muted)">
+              <li>Ночной заезд (компания друзей, Telegram-промо)</li>
+              <li>Фотоотчёт в Telegram/MAX с промокодом</li>
+              <li>Повторный дневной визит по промокоду</li>
+              <li>Апсейл: день рождения подростка / закрытая вечеринка</li>
+            </ol>
+          </div>
+          <div class="card info">
+            <div class="metric-label">Роль в модели</div>
+            <div class="metric">Отдельный upside</div>
+            <p class="metric-sub">Не включён в базовую декомпозицию выручки — считается отдельно.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 10. B2B -->
+      <section class="slide" id="b2b">
+        <div class="eyebrow">10 · Продукт</div>
+        <h2>B2B и корпоративные продажи</h2>
+        <p class="lead">Отдельный upside по events/B2B — не смешиваем с билетной моделью. Новогодние корпоративы стартуют с сентября.</p>
+        <div class="table-wrap" style="margin-top:12px">
+          <table>
+            <thead><tr><th>Этап</th><th>Действие</th><th>Канал</th><th>Метрика</th></tr></thead>
+            <tbody>
+              <tr><td>Лидогенерация</td><td>Форма заявки на сайте, входящие звонки</td><td>Сайт, телефон</td><td>Заявки/нед.</td></tr>
+              <tr><td>Квалификация</td><td>Бриф, бюджет, дата</td><td>Email/звонок</td><td>Doля квалифиц.</td></tr>
+              <tr><td>КП</td><td>Персональное предложение</td><td>Email</td><td>CR в бронь</td></tr>
+              <tr><td>Follow-up</td><td>Напоминание, дедлайн скидки</td><td>Email/SMS</td><td>Время цикла</td></tr>
+              <tr><td>Повтор</td><td>Приглашение на след. мероприятие</td><td>Email/TG</td><td>Retention</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- 11. ATTRIBUTION -->
+      <section class="slide" id="attribution">
+        <div class="eyebrow">11 · Доказуемость</div>
+        <h2>Атрибуция и промокоды</h2>
+        <p class="lead">Каждая цифра в модели должна быть проверяемой: без UTM и промокода канал не защищается перед руководством.</p>
+        <div class="cards-3" style="margin-top:12px">
+          <div class="card"><h3>UTM-стандарт</h3><p>utm_source / utm_medium / utm_campaign / utm_content — единый шаблон на все каналы.</p></div>
+          <div class="card"><h3>Промокоды</h3><p>Свой префикс на сегмент и канал: EMAIL-FAM, TG-NIGHT, SMS-DEAD и т.д.</p></div>
+          <div class="card"><h3>Атрибуция</h3><p>Last-click + assisted attribution, holdout-группы там, где это возможно.</p></div>
+        </div>
+      </section>
+
+      <!-- 12. BUDGET -->
+      <section class="slide" id="budget">
+        <div class="eyebrow">12 · Бюджет</div>
+        <h2>Бюджет каналов</h2>
+        <p class="lead">Диапазоны, не единая «магическая» цифра — итоговый бюджет зависит от выбора ESP и объёма Telegram/MAX production.</p>
+        <div style="margin-top:12px">
+          <div class="budget-row"><div>ESP</div><div class="budget-track"><div class="budget-fill" style="left:10%; right:65%"></div></div><div class="small">150–400 тыс ₽</div></div>
+          <div class="budget-row"><div>Валидация базы</div><div class="budget-track"><div class="budget-fill" style="left:5%; right:80%"></div></div><div class="small">50–150 тыс ₽</div></div>
+          <div class="budget-row"><div>SMS</div><div class="budget-track"><div class="budget-fill" style="left:0%; right:85%"></div></div><div class="small">30–100 тыс ₽</div></div>
+          <div class="budget-row"><div>Telegram/MAX production</div><div class="budget-track"><div class="budget-fill" style="left:15%; right:45%"></div></div><div class="small">200–450 тыс ₽</div></div>
+          <div class="budget-row"><div>Дизайн/вёрстка шаблонов</div><div class="budget-track"><div class="budget-fill" style="left:8%; right:70%"></div></div><div class="small">80–220 тыс ₽</div></div>
+          <div class="budget-row"><div>Аналитика/дашборд</div><div class="budget-track"><div class="budget-fill" style="left:12%; right:60%"></div></div><div class="small">100–280 тыс ₽</div></div>
+          <div class="budget-row"><div>Юрпроверка согласий</div><div class="budget-track"><div class="budget-fill" style="left:2%; right:90%"></div></div><div class="small">20–70 тыс ₽</div></div>
+          <div class="budget-row"><div>Резерв на тесты</div><div class="budget-track"><div class="budget-fill" style="left:20%; right:35%"></div></div><div class="small">250–500 тыс ₽</div></div>
+        </div>
+        <p class="small" style="margin-top:10px">Итог: ≈ 0.9–2.05 млн ₽ на инфраструктуру и production первого сезона (плейсхолдер до утверждения фактических смет).</p>
+      </section>
+
+      <!-- 13. LEGAL -->
+      <section class="slide" id="legal">
+        <div class="eyebrow">13 · Юрблок</div>
+        <h2>Согласия 152-ФЗ / ФЗ-38</h2>
+        <p class="lead">Без валидного согласия контакт не участвует в модели — это влияет на реальный размер базы.</p>
+        <div class="table-wrap" style="margin-top:12px">
+          <table>
+            <thead><tr><th>Тип согласия</th><th>Закон</th><th>Канал</th><th>Что фиксируем</th></tr></thead>
+            <tbody>
+              <tr><td>Обработка персональных данных</td><td>152-ФЗ</td><td>Все</td><td>Дата, источник, форма согласия</td></tr>
+              <tr><td>Рекламная рассылка</td><td>ФЗ-38 «О рекламе»</td><td>Email/SMS/TG/MAX</td><td>Цель согласия, канал, дата, возможность отзыва</td></tr>
+              <tr><td>Согласие на фото/видео</td><td>152-ФЗ</td><td>Events</td><td>Для контента с посетителями (WOW-поводы)</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- 14. DASHBOARD -->
+      <section class="slide" id="dashboard">
+        <div class="eyebrow">14 · Контроль</div>
+        <h2>Дашборд метрик</h2>
+        <p class="lead">Управленческий дашборд — то, что оncall смотрит еженедельно. Ниже плейсхолдеры до подключения реальных данных.</p>
+        <div class="cards-4" style="margin-top:12px">
+          <div class="card"><div class="metric-label">База / deliverability</div><div class="metric">22 500 / 94%</div></div>
+          <div class="card"><div class="metric-label">CR (email)</div><div class="metric">1.0%</div></div>
+          <div class="card"><div class="metric-label">Revenue MTD</div><div class="metric">— млн ₽</div></div>
+          <div class="card"><div class="metric-label">CAC / канал</div><div class="metric">— ₽</div></div>
+          <div class="card"><div class="metric-label">Заявки events/B2B</div><div class="metric">—</div></div>
+          <div class="card"><div class="metric-label">NPS</div><div class="metric">—</div></div>
+          <div class="card"><div class="metric-label">Unsubscribe rate</div><div class="metric">&lt; 0.5%</div></div>
+          <div class="card"><div class="metric-label">Spam rate</div><div class="metric">&lt; 0.1%</div></div>
+        </div>
+      </section>
+
+      <!-- 15. HYPOTHESIS LOG -->
+      <section class="slide" id="hypothesis-log">
+        <div class="eyebrow">15 · Журнал</div>
+        <h2>Журнал гипотез</h2>
+        <p class="lead">Каждая гипотеза — с сегментом, каналом, метрикой, датой и решением. Это то, что превращает CRM в систему, а не набор рассылок.</p>
+        <div class="table-wrap" style="margin-top:12px">
+          <table>
+            <thead><tr><th>Гипотеза</th><th>Сегмент</th><th>Канал</th><th>Метрика</th><th>Дата</th><th>Статус</th></tr></thead>
+            <tbody>
+              <tr><td>Промо недели поднимет CR будних визитов</td><td>Семья 7–12</td><td>Email</td><td>CR, выручка</td><td>2026-07-14</td><td><span class="tag yellow">В тесте</span></td></tr>
+              <tr><td>Night Riders фотоотчёт увеличит повторные визиты</td><td>Подростки</td><td>Telegram</td><td>Repeat rate</td><td>2026-07-21</td><td><span class="tag cyan">Запланировано</span></td></tr>
+              <tr><td>Birthday-flow за 14 дней даёт выше CR, чем за 7</td><td>Семья 7–12</td><td>Email/SMS</td><td>CR</td><td>2026-08-01</td><td><span class="tag cyan">Запланировано</span></td></tr>
+              <tr><td>MAX-дублирование TG не теряет CTR</td><td>Все</td><td>MAX</td><td>CTR</td><td>2026-08-15</td><td><span class="tag cyan">Запланировано</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- 16. ROADMAP -->
+      <section class="slide" id="roadmap">
+        <div class="eyebrow">16 · План</div>
+        <h2>Roadmap июль–сентябрь</h2>
+        <p class="lead">Омниканальность переносим до пика сезона, а не на конец сентября — ключевое отличие от старого тайминга.</p>
+        <div class="timeline" style="margin-top:16px">
+          <div class="tl-item">
+            <span class="tl-dot"></span>
+            <span class="tag orange">Июнь</span>
+            <h3>Факт / missed baseline</h3>
+            <p>Зафиксирован как отправная точка ребейзлайна, не переигрывается.</p>
+          </div>
+          <div class="tl-item">
+            <span class="tl-dot"></span>
+            <span class="tag cyan">Июль</span>
+            <h3>Инфраструктура</h3>
+            <p>Выбор ESP, чистка базы, согласия, UTM/промокоды, базовые цепочки (welcome, pre/post-visit).</p>
+          </div>
+          <div class="tl-item">
+            <span class="tl-dot"></span>
+            <span class="tag cyan">1–15 августа</span>
+            <h3>Сегментация</h3>
+            <p>Pre/post-visit по сегментам, weekly promo, birthday-flow.</p>
+          </div>
+          <div class="tl-item">
+            <span class="tl-dot"></span>
+            <span class="tag fuchsia">16–31 августа</span>
+            <h3>Омниканальность</h3>
+            <p>Email + Telegram + MAX + SMS одновременно, на пике сезона.</p>
+          </div>
+          <div class="tl-item">
+            <span class="tl-dot"></span>
+            <span class="tag purple">Сентябрь</span>
+            <h3>Закрытие сезона</h3>
+            <p>B2B-корпоративы, win-back неактивных, старт продаж новогодних корпоративов.</p>
+          </div>
+        </div>
+      </section>
+
+      <div class="footer">CRM-стратегия парка «Сказка» · ребейзлайн · плейсхолдер-цифры до подключения фактических данных</div>
+    </div>
+  </main>
+</div>
+
+<script src="assets/app.js"></script>
+</body>
+</html>
