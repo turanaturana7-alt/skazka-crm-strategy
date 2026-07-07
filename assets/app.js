@@ -59,6 +59,68 @@ window.addEventListener('DOMContentLoaded', function () {
   });
 });
 
+// ===== Scroll progress rail =====
+window.addEventListener('DOMContentLoaded', function () {
+  var fill = document.getElementById('progress-fill');
+  if (!fill) return;
+  function update() {
+    var doc = document.documentElement;
+    var scrollable = doc.scrollHeight - doc.clientHeight;
+    var pct = scrollable > 0 ? (doc.scrollTop / scrollable) * 100 : 0;
+    fill.style.width = pct + '%';
+  }
+  update();
+  window.addEventListener('scroll', update, { passive: true });
+  window.addEventListener('resize', update);
+});
+
+// ===== Animated counters (page-load / scroll-triggered reveal) =====
+window.addEventListener('DOMContentLoaded', function () {
+  var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var metrics = Array.prototype.slice.call(document.querySelectorAll('.metric'));
+
+  function animateCounter(el) {
+    var text = el.textContent.trim();
+    var m = text.match(/^(\d{1,3}(?:[  ]\d{3})*(?:[.,]\d+)?)([\s\S]*)$/);
+    if (!m || reduceMotion) return;
+    var raw = m[1];
+    var suffix = m[2];
+    var numStr = raw.replace(/[  ]/g, '').replace(',', '.');
+    var target = parseFloat(numStr);
+    if (isNaN(target)) return;
+    var decimals = (numStr.split('.')[1] || '').length;
+    var duration = 900;
+    var start = performance.now();
+    el.classList.add('counting');
+
+    function tick(now) {
+      var p = Math.min(1, (now - start) / duration);
+      var eased = 1 - Math.pow(1 - p, 3);
+      var val = target * eased;
+      var formatted = decimals
+        ? val.toFixed(decimals).replace('.', ',')
+        : Math.round(val).toLocaleString('ru-RU');
+      el.textContent = formatted + suffix;
+      if (p < 1) requestAnimationFrame(tick);
+      else el.textContent = raw + suffix;
+    }
+    requestAnimationFrame(tick);
+  }
+
+  if (reduceMotion || !metrics.length) return;
+
+  var counterObserver = new IntersectionObserver(function (entries, obs) {
+    entries.forEach(function (entry) {
+      if (entry.isIntersecting) {
+        animateCounter(entry.target);
+        obs.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.4 });
+
+  metrics.forEach(function (el) { counterObserver.observe(el); });
+});
+
 // ===== Revenue model calculator =====
 window.addEventListener('DOMContentLoaded', function () {
   var baseEl = document.getElementById('rm-base');

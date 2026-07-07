@@ -8,6 +8,7 @@
 <link rel="stylesheet" href="assets/styles.css" />
 </head>
 <body>
+<div class="progress-rail"><div class="progress-fill" id="progress-fill"></div></div>
 <div class="shell">
 
   <aside class="sidebar">
@@ -49,6 +50,8 @@
       <a href="#rebaseline">Ребейзлайн: июнь–сентябрь</a>
 
       <div class="nav-section">Данные</div>
+      <a href="#attribution">Атрибуция и промокоды</a>
+      <a href="#budget">Бюджет каналов</a>
       <a href="#proof">Доказуемость</a>
       <a href="#legal">152-ФЗ · ФЗ-38</a>
       <a href="#next-step">Следующий шаг</a>
@@ -582,6 +585,45 @@
             <p>Финальная серия сезона, новогодние корпоративы, B2B pipeline.</p>
           </div>
         </div>
+      </section>
+
+      <!-- ATTRIBUTION -->
+      <section class="slide" id="attribution">
+        <div class="eyebrow">Атрибуция и промокоды</div>
+        <h2>Каждая цифра должна быть проверяемой</h2>
+        <p class="lead">Без UTM и промокода канал не защищается перед руководством — цифра остаётся мнением, а не фактом.</p>
+        <div class="cards-3" style="margin-top:14px">
+          <div class="card">
+            <h3>UTM-стандарт</h3>
+            <p>utm_source / utm_medium / utm_campaign / utm_content — единый шаблон на все каналы, без исключений.</p>
+          </div>
+          <div class="card">
+            <h3>Промокоды по сегментам</h3>
+            <p>Свой префикс на сегмент и канал: EMAIL-FAM, TG-NIGHT, SMS-DEAD, B2B-KP — видно источник каждой покупки.</p>
+          </div>
+          <div class="card">
+            <h3>Last-click + assisted</h3>
+            <p>Основная атрибуция — last-click, но фиксируем и ассистирующие касания. Где возможно — holdout-группы для контроля.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- BUDGET -->
+      <section class="slide" id="budget">
+        <div class="eyebrow">Бюджет каналов</div>
+        <h2>Диапазоны, а не одна «магическая» цифра</h2>
+        <p class="lead">Итоговый бюджет зависит от выбора ESP и объёма Telegram/MAX production — показываем вилку, не точку.</p>
+        <div style="margin-top:14px">
+          <div class="budget-row"><div>ESP</div><div class="budget-track"><div class="budget-fill" style="left:10%; right:65%"></div></div><div class="small">150–400 тыс ₽</div></div>
+          <div class="budget-row"><div>Валидация базы</div><div class="budget-track"><div class="budget-fill" style="left:5%; right:80%"></div></div><div class="small">50–150 тыс ₽</div></div>
+          <div class="budget-row"><div>SMS</div><div class="budget-track"><div class="budget-fill" style="left:0%; right:85%"></div></div><div class="small">30–100 тыс ₽</div></div>
+          <div class="budget-row"><div>Telegram/MAX production</div><div class="budget-track"><div class="budget-fill" style="left:15%; right:45%"></div></div><div class="small">200–450 тыс ₽</div></div>
+          <div class="budget-row"><div>Дизайн/вёрстка шаблонов</div><div class="budget-track"><div class="budget-fill" style="left:8%; right:70%"></div></div><div class="small">80–220 тыс ₽</div></div>
+          <div class="budget-row"><div>Аналитика/дашборд</div><div class="budget-track"><div class="budget-fill" style="left:12%; right:60%"></div></div><div class="small">100–280 тыс ₽</div></div>
+          <div class="budget-row"><div>Юрпроверка согласий</div><div class="budget-track"><div class="budget-fill" style="left:2%; right:90%"></div></div><div class="small">20–70 тыс ₽</div></div>
+          <div class="budget-row"><div>Резерв на тесты</div><div class="budget-track"><div class="budget-fill" style="left:20%; right:35%"></div></div><div class="small">250–500 тыс ₽</div></div>
+        </div>
+        <p class="small" style="margin-top:10px">Итог: ≈ 0.9–2.05 млн ₽ на инфраструктуру и production первого сезона (плейсхолдер до утверждения фактических смет).</p>
       </section>
 
       <!-- PROOF: DASHBOARD + HYPOTHESIS LOG -->

@@ -305,3 +305,11 @@ svg text { fill: var(--muted); font-family: inherit; }
   .budget-row { grid-template-columns: 1fr; }
   h2 { font-size: 24px; }
 }
+
+/* Scroll progress rail */
+.progress-rail { position: fixed; top: 0; left: 0; right: 0; height: 3px; background: transparent; z-index: 50; }
+.progress-fill { height: 100%; width: 0%; background: linear-gradient(90deg, var(--cyan-2), var(--fuchsia-2)); box-shadow: 0 0 10px rgba(217,70,239,0.35); }
+@media (prefers-reduced-motion: reduce) { .progress-fill { transition: none; } }
+
+/* Counter reveal */
+.metric.counting { font-variant-numeric: tabular-nums; }
