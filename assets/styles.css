@@ -234,6 +234,13 @@ p, li { color: var(--muted); font-size: 16px; line-height: 1.65; }
 .tag.purple { background: var(--purple-light); color: var(--purple); }
 .tag.lime { background: var(--lime-light); color: var(--lime); }
 
+.kpi-row { display: inline-flex; align-items: center; gap: 9px; }
+.kpi-row .icon {
+  flex-shrink: 0; width: 18px; height: 18px;
+  fill: none; stroke: var(--cyan-2); stroke-width: 1.75;
+  stroke-linecap: round; stroke-linejoin: round;
+}
+
 table { width: 100%; border-collapse: collapse; font-size: 15px; }
 th { text-align: left; color: var(--cyan-2); text-transform: uppercase; font-size: 12px; letter-spacing: .08em; font-weight: 800; padding: 8px 10px; border-bottom: 1.5px solid var(--line); }
 td { padding: 10px; border-bottom: 1px solid var(--line); color: var(--muted); vertical-align: top; }
