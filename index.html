@@ -38,8 +38,6 @@
       <a href="#content-strategy-results">Результат контент-стратегии</a>
       <a href="#ticket-metrics">Метрики продажи билетов</a>
 
-      <div class="nav-section">Воронки и автоматизация</div>
-      <a href="#triggers">Автоматические уведомления</a>
 
       <div class="nav-section">Данные</div>
       <a href="#attribution">Атрибуция и промокоды</a>
@@ -364,78 +362,6 @@
           <div class="card"><p style="margin:0; color:var(--text); font-weight:700">LTV</p></div>
           <div class="card"><p style="margin:0; color:var(--text); font-weight:700">CAC</p></div>
           <div class="card"><p style="margin:0; color:var(--text); font-weight:700">Выручка</p></div>
-        </div>
-      </section>
-
-      <!-- AUTOMATED TRIGGERS -->
-      <section class="slide" id="triggers">
-        <div class="eyebrow">Автоматические уведомления</div>
-        <h2>CRM должна реагировать на поведение гостя, дату визита и коммерческий потенциал</h2>
-        <div class="cards-2" style="margin-top:14px">
-          <div class="card">
-            <span class="tag cyan">Email + TG/MAX при наличии</span>
-            <h3 style="margin-top:8px">Покупка билета онлайн</h3>
-            <p>Билет, карта, парковка, автобус, браслет, FAQ.</p>
-            <p class="small"><b>Условие:</b> оплата успешна и согласие на канал есть</p>
-            <p class="small"><b>Тайминг:</b> сразу + T-24 часа</p>
-            <p class="small"><b>Метрика:</b> open, click map, снижение вопросов</p>
-          </div>
-          <div class="card">
-            <span class="tag cyan">Email или TG/MAX</span>
-            <h3 style="margin-top:8px">Первый визит завтра</h3>
-            <p>Маршрут по возрасту ребёнка, туалеты, фуд-зоны, кассы.</p>
-            <p class="small"><b>Условие:</b> первичная покупка, дата визита завтра</p>
-            <p class="small"><b>Тайминг:</b> T-24 часа</p>
-            <p class="small"><b>Метрика:</b> click map, NPS first visit</p>
-          </div>
-          <div class="card">
-            <span class="tag orange">Email → TG/MAX → SMS только горячим</span>
-            <h3 style="margin-top:8px">Брошенная покупка</h3>
-            <p>Помощь с покупкой, онлайн-цена, короткий дедлайн.</p>
-            <p class="small"><b>Условие:</b> click_buy/card_open без all_pay</p>
-            <p class="small"><b>Тайминг:</b> 1 час / 24 часа / 48 часов</p>
-            <p class="small"><b>Метрика:</b> checkout recovery, CPS</p>
-          </div>
-          <div class="card">
-            <span class="tag green">Email + TG/MAX</span>
-            <h3 style="margin-top:8px">После визита</h3>
-            <p>NPS 0–10, отзыв, промокод на повторный визит.</p>
-            <p class="small"><b>Условие:</b> визит/покупка закрыта, нет NPS за 24 часа</p>
-            <p class="small"><b>Тайминг:</b> T+6 часов или T+1 день</p>
-            <p class="small"><b>Метрика:</b> NPS, review rate, repeat</p>
-          </div>
-          <div class="card">
-            <span class="tag orange">Персональный follow-up менеджера</span>
-            <h3 style="margin-top:8px">Низкий NPS</h3>
-            <p>Извинение, уточнение причины, компенсационный сценарий.</p>
-            <p class="small"><b>Условие:</b> оценка 0–6 или негативный тег</p>
-            <p class="small"><b>Тайминг:</b> до 24 часов</p>
-            <p class="small"><b>Метрика:</b> closed loop rate, recovered guests</p>
-          </div>
-          <div class="card">
-            <span class="tag fuchsia">Email + TG/MAX + задача менеджеру при интересе</span>
-            <h3 style="margin-top:8px">День рождения ребёнка</h3>
-            <p>Сценарии праздника, шоу, кафе, беседки, заявка wow-повод.</p>
-            <p class="small"><b>Условие:</b> дата рождения известна, до события 45/30/14/3 дня</p>
-            <p class="small"><b>Тайминг:</b> 45/30/14/3 дня</p>
-            <p class="small"><b>Метрика:</b> event lead, booking rate, average deal</p>
-          </div>
-          <div class="card">
-            <span class="tag cyan">Email → TG/MAX → SMS дедлайн</span>
-            <h3 style="margin-top:8px">Спящий клиент</h3>
-            <p>Что изменилось в парке, маршрут возвращения, промокод.</p>
-            <p class="small"><b>Условие:</b> нет покупки 90+ дней</p>
-            <p class="small"><b>Тайминг:</b> 90/120/150 дней</p>
-            <p class="small"><b>Метрика:</b> reactivation rate, unsubscribe</p>
-          </div>
-          <div class="card">
-            <span class="tag purple">Email + задача менеджеру</span>
-            <h3 style="margin-top:8px">B2B-заявка</h3>
-            <p>Бриф, пакеты, КП, дедлайн бронирования.</p>
-            <p class="small"><b>Условие:</b> форма events/wow-повод или корпоративный интерес</p>
-            <p class="small"><b>Тайминг:</b> сразу / 2 дня / 5 дней / 10 дней</p>
-            <p class="small"><b>Метрика:</b> SQL, КП, closed won</p>
-          </div>
         </div>
       </section>
 
